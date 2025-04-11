@@ -1,0 +1,12 @@
+
+.navBar{
+    margin-bottom: 1px;
+    width: 100%;
+    position: fixed !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    background-color: var(--bg);
+    color: var(--text);
+}
