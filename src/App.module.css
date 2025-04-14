@@ -8,8 +8,182 @@
 }
 
 body{
+    width: 100%;
+    height: auto;
     background-color: var(--preto);
+    overflow-x: hidden;
+
 }
+
 main{
-    padding-top: 58px;
+    padding-top: 55px;
 }
+
+.s2 {
+    position: relative;
+    height: 110%;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: transparent;
+    overflow: visible;
+}
+
+.s2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(assets/images/background-img.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: -500px 0px;
+    opacity: 0.2; /* ajuste como quiser */
+    z-index: -1;
+}
+
+#draws{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    pointer-events: none;
+    z-index: 9999;
+    filter: invert(100%);
+}
+
+.info_div{
+    margin-top: 5rem;
+}
+
+.divImg1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.divImg2{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.divImg3{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.Container_infoResto{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 999; 
+}
+
+.Container_infoResto h3{
+    margin-top: 50px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 10px;
+}
+
+.CarouselClass{
+    margin-top: 50px;
+    justify-content: left;
+    align-items: baseline;
+}
+
+.Container_infoMusica{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Container_infoMusica h3{
+    font-family: monospace, Times, serif;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.Container_infoArt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Container_infoArt h3{
+    font-family: monospace, Times, serif;
+    color: white;
+    margin-bottom: 50px;
+    font-weight: 700;
+    letter-spacing: 10px;
+}
+
+.Container_infoTech{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.Container_infoTech h3{
+    font-family: monospace, Times, serif;
+    color: white;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-weight: 700;
+    letter-spacing: 10px;
+}
+
+.s3 {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: transparent;
+    overflow: visible;
+    z-index: 0;
+}
+
+.s3::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(assets/images/ParedePodre.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: 0px 0px;
+    opacity: 1; 
+    z-index: -1;
+}
+
+@media (max-width: 435px) {
+    .Container_infoTech h3{
+        margin-left: 50px;
+    }
+
+    .s3 button{
+        margin-top: 45%;
+    }
+    
+}
+
