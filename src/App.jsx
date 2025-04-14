@@ -16,7 +16,8 @@ import whatsapp from "./assets/images/whatsapp.png"
 import { InfoResto } from './components/info.jsx';
 import { InfoMusica } from './components/info.jsx';
 import { InfoTech } from './components/info.jsx';
-import Contatos from './components/contato.jsx'
+import Contatos from './components/contato.jsx';
+import MeuFooter from './components/footer.jsx'
 
 
 
@@ -70,6 +71,7 @@ function App() {
           <Contatos/>
         </section>
       </main>
+      <MeuFooter/>
     </>
   );
 }
