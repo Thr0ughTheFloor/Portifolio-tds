@@ -27,9 +27,21 @@ footer{
 .Container_ig img{
     width: 45px;
     filter: invert(100%);
+    transition: 200ms ease-in-out;
 }
 
 .Container_fb img{
     width: 45px;
     filter: invert(100%);
+    transition: 200ms ease-in-out;
+}
+
+.Container_sc img{
+    width: 45px;
+    filter: invert(100%);
+    transition: 200ms ease-in-out;
+}
+
+.Container_sc img:hover,.Container_fb img:hover,.Container_ig img:hover{
+    filter: invert(70%);
 }

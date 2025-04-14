@@ -1,6 +1,7 @@
 import Style from './footer.module.css'
 import facebook from '../assets/images/facebook.png'
 import instagram from '../assets/images/instagram.png'
+import soundcloud from '../assets/images/soundcloud.png'
 
 function MeuFooter(){
     return(
@@ -12,6 +13,9 @@ function MeuFooter(){
             </div>
             <div className={Style.Container_fb}>
                 <a href="https://www.facebook.com/305man/"><img src={facebook} alt="instagram-logo" /></a>
+            </div>
+            <div className={Style.Container_sc}>
+                <a href="https://www.soundcloud.com/djsubbb/"><img src={soundcloud} alt="soundcloud-logo" /></a>
             </div>
  
             </section>
