@@ -1,3 +1,178 @@
-.tt{
-    color: red;
+
+
+.MainContact{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: transparent;
+    overflow: visible;
+    z-index: 0;
 }
+
+.MainContact::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(assets/images/Lago.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 1; 
+    z-index: -1;
+    inset: 0;
+    animation: backgroundZoom 60s ease-in-out infinite;
+}
+
+.s1{
+    width: 300px;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0vh;
+}
+
+.s1 h2{
+    font-family: monospace;
+    letter-spacing: 15px;
+    color: white;
+}
+.s1 input{
+    border-radius: 10px;
+    width: 250px;
+    height: 45px;
+    background-color: black;
+    border: 2px white solid;
+}
+
+.s1 textarea{
+    border-radius: 10px;
+    width: 250px;
+    height: 105px;
+    background-color: black;
+    border: 2px white solid;
+}
+
+.s1 button{
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 250px;
+    height: 45px;
+    color: white;
+    background-color: black;
+    border: 2px white solid;
+    transition: 200ms ease-in-out;
+}
+.s1 button:hover{
+    background-color: rgb(94, 94, 94);
+}
+
+.Localizacao{
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+} 
+
+.s2{
+    width: 100vw;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.s2 h2{
+    font-family: monospace;
+    letter-spacing: 10px;
+    color: white;
+} 
+
+.s2 p{
+    margin-right: 10%;
+}
+
+@media (max-width: 500px) {
+
+    .s2 h2{
+        letter-spacing: 0px;
+    }
+
+}
+
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: transparent;
+    overflow: visible;
+    z-index: 0;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(assets/images/Lago.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 1; 
+    z-index: -1;
+    inset: 0;
+    animation: backgroundZoom 60s ease-in-out infinite;
+}
+
+@keyframes backgroundZoom {
+    0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+  }
+
+  @media (width: 1190px) {
+    .s1{
+        background-size: 500%
+    }
+  } 
+
+.s1{
+    width: 300px;
+    background-color: red !important;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.Localizacao{
+    width: 50vw;
+    height: auto;
+} */
