@@ -1,11 +1,38 @@
-.s2{
+.container{
+    background-color: #000 !important;
     width: 50vw;
     height: auto;
 }
+
+.carousel {
+    background-color: #000 !important;
+  }
+
+  .carousel-item {
+    background-color: #000 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-item img {
+    filter: brightness(0.6) !important;
+    object-fit: cover !important;
+    width: 100% !important;
+    height: auto !important;
+    transition: filter 0.3s ease-in-out;
+  }
+
 
 #carouselExampleControls .carousel-item img {
     height: 500px;
     width: 100%;
     object-fit: cover;
     object-position: center;
+  }
+
+  @media (max-width: 500px) {
+    .container{
+        width: 99vw;
+    }
   }
